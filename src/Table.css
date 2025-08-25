@@ -1,0 +1,32 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* allows horizontal scroll */
+}
+
+.custom-table {
+  border-collapse: collapse;
+  min-width: 1000px; /* force horizontal scroll */
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+/* Sticky First and Last Columns */
+.sticky-col {
+  position: sticky;
+  background: #fff; /* so it overlays nicely */
+  z-index: 2;
+}
+
+.first-col {
+  left: 0;
+  z-index: 3; /* above last col */
+}
+
+.last-col {
+  right: 0;
+}
